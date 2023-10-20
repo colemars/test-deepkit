@@ -1,7 +1,12 @@
-import { valuesOf } from "@deepkit/type";
+import { ReflectionClass } from "@deepkit/type";
 
-type Groups = "admin" | "user" | "guest";
+class User {
+  id = 0;
+  username = "";
+  password = "";
+}
 
-const groups = valuesOf<Groups>(); // ['admin', 'user', 'guest']
-
-console.log("groups", groups);
+const properties = ReflectionClass.from(User).getProperties();
+for (const property of properties) {
+  console.log(property.name, property.type);
+}
