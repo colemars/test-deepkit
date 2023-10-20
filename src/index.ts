@@ -1,16 +1,7 @@
-import { hello } from "./hello";
-import { MinLength, typeOf } from "@deepkit/type";
+import { valuesOf } from "@deepkit/type";
 
-type Username = string & MinLength<3>;
+type Groups = "admin" | "user" | "guest";
 
-interface User {
-  username: Username;
-  password: string;
-  created: Date;
-}
+const groups = valuesOf<Groups>(); // ['admin', 'user', 'guest']
 
-const type = typeOf<User>([]);
-console.log("Type introspection", type);
-// console.log("Type stringify", stringifyResolvedType(type));
-
-console.log(hello());
+console.log("groups", groups);
