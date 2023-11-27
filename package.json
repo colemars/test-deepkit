@@ -20,7 +20,7 @@
   "devDependencies": {
     "@deepkit/type": "1.0.1-alpha.105",
     "@deepkit/type-compiler": "^1.0.1-alpha.108",
-    "@types/jest": "^29.5.8",
+    "@types/jest": "^29.5.10",
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
