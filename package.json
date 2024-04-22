@@ -18,7 +18,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@deepkit/type": "1.0.1-alpha.145",
+    "@deepkit/type": "1.0.1-alpha.146",
     "@deepkit/type-compiler": "^1.0.1-alpha.143",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
